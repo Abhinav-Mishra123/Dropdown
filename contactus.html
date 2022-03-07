@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+      .navlist {
+          height: 60px;
+          background-color: aquamarine;
+          float: left;
+
+      }
+      .navlist ul li {
+          position: relative;
+          list-style: none;
+          display: inline-block;
+      }
+      .navlist ul li a {
+          display: block;
+          padding: 0 15px;
+          text-decoration: none;
+          font-size: 16px;
+          line-height: 60px;
+          color: rgb(180, 53, 53);
+      }
+      /* .navlist ul li a:hover {
+          background-color: aliceblue;
+      } */
+ 
+ .navlist ul ul {
+     position: absolute;
+     top: 60px;
+     display: none;
+
+ }
+ .navlist ul li:hover >ul {
+     display: block;
+ }
+ .navlist ul ul li {
+          width: 360px;
+          height: 40px;
+          float: none;
+          display: list-item;
+          position: relative;
+          border-radius: 4px;
+      }
+      .navlist ul ul ul li {
+          position: relative;
+          top: -60px;
+          right: 360px;
+          overflow: hidden;
+      }
+      i.fa-solid.fa-envelope {
+    margin-right: 12px;
+}
+i.fa-brands.fa-whatsapp-square {
+    margin-right: 10px;
+}
+.unorder {
+    padding: 0 10px;
+}
+ 
+ </style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <nav class="navlist">
+            <ul>
+                <li><a href="#">Contact us<i class="fa-solid fa-angle-down"></i>
+                    <ul class="unorder">
+                        <li> <a href="mailto:sales@hansavacations@gmail.com" ><i class="fa-solid fa-envelope"></i>sales@hansavacations@gmail.com</a></li>
+                        <li> <a href="mailto:tours@hansavacations@gmail.com" ><i class="fa-solid fa-envelope"></i>tours@hansavacations@gmail.com</a></li>
+                        <li> <a href="mailto:sales@hansavacations@gmail.com" ><i class="fa-solid fa-envelope"></i>sales@hansavacations@gmail.com</a></li>
+
+                        <li><a href="tel:+91 011460342"><i class="fa-duotone fa-phone-hangup"></i>+91 05637636672</a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp-square"></i>9863763726</a></li>
+
+
+
+                    </ul>
+                
+                
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+</body>
+</html>

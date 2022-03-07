@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .dropdown {
+        margin: 0 auto;
+      }
+      nav {
+        height: 60px;
+        background-color: rgb(146, 191, 230);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      }
+      .logo {
+        padding: 3px 0 0 44px;
+        width: 108px;
+        height: 100%;
+      }
+      nav ul {
+          float: right
+          ;
+          margin-right: 30px;
+          padding: 0;
+          margin: 0;
+      }
+      nav ul li {
+          background-color: rgb(76, 76, 80);
+          position:relative;
+          list-style: none;
+          display: inline-block;
+      }
+      nav ul li a {
+          display: block;
+          padding: 0 10px;
+          color: white;
+          text-decoration: none;
+          line-height: 60px;
+          font-size: 14px;
+      }
+      nav ul li a:hover {
+          background-color:#1cadba;
+        ;
+      }
+      nav ul ul {
+          position: absolute;
+          top: 60px;
+          display: none;
+
+      }
+      nav ul li:hover > ul {
+          display: block;
+      }
+      nav ul ul li {
+          width: 180px;
+          height: 40px;
+          float: none;
+          display: list-item;
+          position: relative;
+          border-radius: 4px;
+      }
+      nav ul ul ul li {
+          position: relative;
+          top: -60px;
+          left: 180px;
+          overflow: hidden;
+      }
+      .abhibtn1 {
+          background-color:rgba(0,0,0.1,0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <nav>
+        <img src="/img/logo.png" class="logo" />
+        <ul>
+          <li>
+            <a href="#">International Holidays <i class="fa-solid fa-angle-down"></i></a>
+            <ul>
+                <li>
+                    <a class="abhibtn1" href="#">Asia  <i style="transform: rotate(-90deg);" class="fa-solid fa-angle-down"></i></a>
+                    <ul>
+                      <li><a href="#">China</a></li>
+                      <li><a href="#">HongKong</a></li>
+                      <li><a href="#">Thailand</a></li>
+                      <li><a href="#">Malaysia</a></li>
+                      <li><a href="#">Bali</a></li>
+                      <li><a href="#">Phillipines</a></li>
+                      <li><a href="#">Singapore</a></li>
+                      <li><a href="#">Srilanka</a></li>
+                      <li><a href="#">Vietnam</a></li>
+
+
+
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="abhibtn1" href="#">America <i style="transform: rotate(-90deg);" class="fa-solid fa-angle-down"></i></a>
+                    <ul>
+                      <li><a href="#">Brazil</a></li>
+                      <li><a href="#">USA</a></li>
+                      <li><a href="#">Canada</a></li>
+                      <li><a href="#">Alaska</a></li>
+
+                    </ul>
+                  </li>
+
+
+                  <li>
+                    <a class="abhibtn1" href="#">Australia & Newzealand <i style="transform: rotate(-90deg);" class="fa-solid fa-angle-down"></i></a>
+                    <ul>
+                      <li><a href="#">Australia</a></li>
+                      <li><a href="#">Newzealand</a></li>
+                      <li><a href="#">fijji Island</a></li>
+
+                    </ul>
+                  </li>
+
+
+                  <li>
+                    <a class="abhibtn1" href="#">Europe <i style="transform: rotate(-90deg);" class="fa-solid fa-angle-down"></i></a>
+                    <ul>
+                      <li><a href="#">Italy</a></li>
+                      <li><a href="#">Austria</a></li>
+                      <li><a href="#">UK</a></li>
+                      <li><a href="#">France</a></li>
+                      <li><a href="#">Switzerland</a></li>
+
+
+
+                    </ul>
+                  </li>
+
+
+                  <li>
+                    <a class="abhibtn1" href="#">Africa <i style="transform: rotate(-90deg);" class="fa-solid fa-angle-down"></i></a>
+                    <ul>
+                      <li><a href="#">Kenya</a></li>
+                      <li><a href="#">Mauritius</a></li>
+                      <li><a href="#">Tanzania</a></li>
+                      <li><a href="#">South Africa</a></li>
+
+
+
+                    </ul>
+                  </li>
+                  <li>
+                    <a  class="abhibtn1" href="#">Middle East <i style="transform: rotate(-90deg);" class="fa-solid fa-angle-down"></i></a>
+                    <ul>
+                      <li><a href="#">Dubai</a></li>
+                      <li><a href="#">Oman</a></li>
+
+
+
+                    </ul>
+                  </li>
+                  
+            </ul>
+            <!-- <ul>
+              <li><a href="">Python</a></li>
+              <li><a href="">javascript</a></li>
+              <li><a href="">Jquery</a></li>
+            </ul> -->
+          </li>
+          <li>
+            <a href="#">Domestic Holidays <i class="fa-solid fa-angle-down"></i></a>
+            <ul>
+              <li><a href="#">Gujrat</a></li>
+              <li><a href="#">Manali</a></li>
+              <li><a href="#">Gangtok</a></li>
+              <li><a href="#">Ooty</a></li>
+              <li><a href="#">Jammu and Kashmir</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
